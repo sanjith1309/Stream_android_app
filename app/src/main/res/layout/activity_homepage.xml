@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="w"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+    <TextView
+        android:id="@+id/streamtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STREAM"
+        android:textColor="@color/white"
+        android:background="#1D5D9B"
+        android:textAlignment="center"
+        android:textSize="45dp"
+        android:fontFamily="@font/boogaloo"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#1D5D9B"
+        android:padding="8dp">
+
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/profile"
+            android:id="@+id/button1"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+
+            android:background="@drawable/plus"
+            android:id="@+id/button2"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/homeclicked"
+            android:id="@+id/button3"/>
+    </LinearLayout>
+
+</RelativeLayout>
