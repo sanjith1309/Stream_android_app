@@ -3,9 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".homepage">
+    tools:context=".newdrop">
     <TextView
         android:id="@+id/streamtx"
         android:layout_width="match_parent"
@@ -16,21 +15,21 @@
         android:textAlignment="center"
         android:textSize="45dp"
         android:fontFamily="@font/boogaloo"/>
-
-
-    <androidx.recyclerview.widget.RecyclerView
+    <TextView
+        android:id="@+id/abcd"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/streamtx"
-        android:layout_above="@+id/linear"
+        android:text="Drop to Stream"
         android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="5dp"
+        android:textColor="@color/black"
+        android:layout_marginVertical="20dp"
+        android:textAlignment="viewStart"
+        android:fontFamily="@font/boogaloo"
+        android:textSize="35dp"
         />
 
-
-
     <LinearLayout
-        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -50,14 +49,14 @@
             android:layout_height="55dp"
             android:layout_weight="1"
 
-            android:background="@drawable/plus"
+            android:background="@drawable/plusclicked"
             android:id="@+id/button2"/>
 
         <Button
             android:layout_width="40dp"
             android:layout_height="55dp"
             android:layout_weight="1"
-            android:background="@drawable/homeclicked"
+            android:background="@drawable/home"
             android:id="@+id/button3"/>
     </LinearLayout>
 
