@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".editprofile">
     <TextView
         android:id="@+id/streamtx"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="STREAM"
+
         android:textColor="@color/white"
         android:background="#1D5D9B"
         android:textAlignment="center"
@@ -22,11 +24,120 @@
         android:layout_below="@+id/streamtx"
         android:text="Edit your profile"
         android:textColor="@color/black"
-        android:layout_marginVertical="20dp"
+        android:layout_marginVertical="10dp"
         android:textAlignment="center"
         android:gravity="center"
         android:fontFamily="@font/boogaloo"
         android:textSize="35dp"
         />
+
+    <ImageView
+        android:id="@+id/picimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/Edtx"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginVertical="15dp"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/dp1"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/useridtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picimg"
+        android:fontFamily="@font/boogaloo"
+        android:text="Userid"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"/>
+
+    <EditText
+        android:id="@+id/useridinput"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useridtx"
+        android:fontFamily="@font/boogaloo"
+        android:text=""
+        android:backgroundTint="@color/black"
+        android:imeOptions="actionNext"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"/>
+    <TextView
+        android:id="@+id/nametx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useridinput"
+        android:fontFamily="@font/boogaloo"
+        android:text="Name"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/nameinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametx"
+        android:fontFamily="@font/boogaloo"
+        android:text=""
+        android:backgroundTint="@color/black"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"/>
+    <TextView
+        android:id="@+id/biotx"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameinput"
+        android:fontFamily="@font/boogaloo"
+        android:text="Bio"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="20dp"/>
+    <EditText
+        android:id="@+id/bioinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/biotx"
+        android:fontFamily="@font/boogaloo"
+        android:text=""
+        android:backgroundTint="@color/black"
+        android:textSize="30dp"
+        android:imeOptions="actionNext"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:layout_marginHorizontal="20dp"/>
+
+    <Button
+        android:id="@+id/updatebt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bioinput"
+        android:layout_centerInParent="true"
+        android:layout_marginVertical="15dp"
+        android:background="#1D5D9B"
+        android:fontFamily="@font/boogaloo"
+        android:text="UPDATE"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/updatebt"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+
+
 
 </RelativeLayout>

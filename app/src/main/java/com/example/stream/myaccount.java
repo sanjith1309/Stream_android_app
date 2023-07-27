@@ -24,7 +24,7 @@ import java.util.HashMap;
 public class myaccount extends AppCompatActivity {
     private FirebaseAuth auth;
     private ImageView profileImageView;
-    private Button logoutbt,editbt,homebt,newdrop;
+    private Button logoutbt,editbt,homebt,newdrop,editprofilebt;
     private TextView nameTextView, bioTextView,useridview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,16 @@ public class myaccount extends AppCompatActivity {
         logoutbt= findViewById(R.id.Logoutbt);
         homebt = findViewById(R.id.button3);
         newdrop = findViewById(R.id.button2);
+        editprofilebt=findViewById(R.id.editbt);
+
+        editprofilebt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(myaccount.this, editprofile.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         newdrop.setOnClickListener(new View.OnClickListener() {
             @Override

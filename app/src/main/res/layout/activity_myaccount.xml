@@ -36,6 +36,7 @@
         android:layout_height="200dp"
         android:layout_below="@+id/profiletx"
         android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="100dp"
         android:layout_marginVertical="20dp"
         android:layout_marginTop="83dp"
