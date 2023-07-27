@@ -19,6 +19,7 @@ public class homepage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(homepage.this,myaccount.class);
+                i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(i);
                 finish();
             }
@@ -27,9 +28,13 @@ public class homepage extends AppCompatActivity {
              @Override
              public void onClick(View view) {
                  Intent i = new Intent(homepage.this,newdrop.class);
+                 i.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                  startActivity(i);
                  finish();
              }
          });
+    }
+    @Override
+    public void onBackPressed() {
     }
 }

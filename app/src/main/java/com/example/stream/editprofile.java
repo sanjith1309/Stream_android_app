@@ -78,6 +78,7 @@ public class editprofile extends AppCompatActivity {
                 useridview.requestFocus();
             }
         }
+        
 
 
 
@@ -133,6 +134,5 @@ public class editprofile extends AppCompatActivity {
         String regex = "^[a-zA-Z0-9]+$";
         return name.matches(regex);
     }
-
 
 }

@@ -49,6 +49,7 @@ public class newdrop extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Intent intent = new Intent(newdrop.this, nextActivityClass);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
                 finish();
             }
@@ -63,6 +64,9 @@ public class newdrop extends AppCompatActivity {
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
+    }
+    @Override
+    public void onBackPressed() {
     }
 
 }

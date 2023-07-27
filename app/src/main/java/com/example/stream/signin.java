@@ -188,6 +188,9 @@ public class signin extends AppCompatActivity {
 
         return randomString.toString();
     }
+    @Override
+    public void onBackPressed() {
+    }
 
 
 }
